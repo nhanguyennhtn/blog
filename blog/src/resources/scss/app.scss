@@ -1,0 +1,52 @@
+@import 'variables';
+
+h1 {
+    color: $text-color;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+body {
+    .app-item {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card-cover {
+            flex: 33.33%;
+            max-width: 33.33%;
+            padding: 5px;
+
+            .card {
+                height: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .card-course-item {
+        margin-top: 14px;
+    }
+
+    .app {
+        text-align: center;
+
+        .user-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            margin-right: 4px;
+        }
+        
+        .card-img-top {
+            width: 28px;
+        }
+    }
+}
+
+

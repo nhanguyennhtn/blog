@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="../../public/css/app.css">
+</head>
+
+<body>
+    <div class="app-item">
+        {{#each data}}
+        <div class="card-cover">
+            <div class="card">
+                <a href="/courses/{{this.slug}}">
+                    <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <a href="/courses/{{this.slug}}">
+                        <h5 class="card-title">{{this.name}}</h5>
+                    </a>
+                    <p class="card-text">{{this.title}}</p>
+                    <p class="card-text">{{this.videoId}}</p>
+                    <a href="{{this.slug}}" class="btn btn-primary">Mua Khoa hoc</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</body>
+
+</html>
